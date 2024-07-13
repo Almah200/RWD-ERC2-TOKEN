@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ERC20 Token Interaction</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js"
+      type="application/javascript"
+    ></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <h1>ERC20 Token Interaction</h1>
+    <button id="connectButton">Connect Wallet</button>
+    <div>
+      <h2>Token Info</h2>
+      <p>Name: <span id="tokenName"></span></p>
+      <p>Symbol: <span id="tokenSymbol"></span></p>
+      <p>Total Supply: <span id="totalSupply"></span></p>
+    </div>
+    <div>
+      <h2>Check Balance</h2>
+      <input type="text" id="balanceOfAddress" placeholder="Enter address" />
+      <button id="balanceOfButton">Get Balance</button>
+      <p>Balance: <span id="balance"></span></p>
+    </div>
+    <div>
+      <h2>Transfer Tokens</h2>
+      <input type="text" id="transferTo" placeholder="Recipient address" />
+      <input type="text" id="transferAmount" placeholder="Amount" />
+      <button id="transferButton">Transfer</button>
+    </div>
+  </body>
+</html>
