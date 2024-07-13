@@ -1,11 +1,14 @@
 body {
   font-family: Arial, sans-serif;
   margin: 20px;
+  background-image: url("pic2.jpeg");
+  background-size: cover; /* This will ensure the image covers the entire background */
+  background-position: center;
 }
 
 h1,
 h2 {
-  color: #333;
+  color: green;
 }
 
 input {
@@ -13,17 +16,18 @@ input {
   padding: 10px;
   width: 300px;
   box-sizing: border-box;
+  border: solid black;
 }
 
 button {
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color: green;
   color: white;
-  border: none;
+  border: solid black;
   cursor: pointer;
   margin: 10px 0;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: blue;
 }
